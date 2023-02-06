@@ -371,3 +371,37 @@ lightning-input,lightning-select,lightning-textarea,lightning-checkbox-group ,li
    /* --sds-c-icon-color-background: gray;  */
    margin: 3%;
 }
+
+/*  For Emoji Rating  */
+
+.rateEmoji1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.rating-Emoji-icons {
+    height: 100px;
+    width: 100px;
+}
+
+.emoji-input-box {
+    display: none;
+}
+
+.emoji-ratingfield {
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.emoji-ratingfield:hover {
+    filter: grayscale(0);
+    transition: 100ms ease;
+}
+
+.emoji-ratingfield-Selected {
+    filter: grayscale(0);
+    transition: 100ms ease;
+}
+

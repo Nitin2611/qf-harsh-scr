@@ -19,6 +19,9 @@ export default class Quickformfieldcomponent extends LightningElement {
    @api fieldAttribute;
    @api fieldAttributeValue;
    @api fieldId;
+
+   @track isFieldDesabled = false;
+
    @track FieldShown = true;
    @track LabelShown =true;
    @track isReqired =true;
@@ -246,4 +249,22 @@ if(this.FieldType!=undefined && this.FieldType!='undefined' && this.FieldType!='
 }
     renderedCallback(){
     } 
+
+    emojiRatingValue(event) {
+        try {
+            var emojiValue = event.target.value;
+            var emojiName = event.target.name;
+            console.log('emoji Name ==>', emojiName);
+            console.log("rating ==>", emojiValue);
+
+            var emojiSelectedEle = this.template.querySelectorAll('.emoji-ratingfield-Selected');
+            emojiSelectedEle.forEach(element => {
+                element.classList.remove('emoji-ratingfield-Selected');
+            });
+            var emojiEle = this.template.querySelector('label[title="'+ emojiName +'"]');
+            emojiEle.classList.add('emoji-ratingfield-Selected');
+        } catch (error) {
+            console.log('In the catch part of emojiRatingValue ==>', {error});
+        }
+    }
 }

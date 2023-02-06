@@ -711,16 +711,16 @@
                     </template>  
                 
                     <div class="rateEmoji1"  id={PageId}>
-                        <input type="radio" id={ratingfirst} disabled name={ratingfirst} value="5" onclick={ratingvalue} checked={checkedRating} />
-                        <label  class="ratingfield" for={ratingfirst} title="5 stars"><img src={emojiRating1}></label>
-                        <input type="radio" id={ratingtwo} disabled name={ratingtwo} value="4" onclick={ratingvalue} checked={checkRating} />
-                        <label  class="ratingfield" for={ratingtwo} title="4 stars"></label>
-                        <input type="radio" id={ratingthree} disabled name={ratingthree} value="3" onclick={ratingvalue} checked={checkRating} />
-                        <label  class="ratingfield" for={ratingthree} title="3 stars">3 stars</label>
-                        <input type="radio" id={ratingfour} disabled name={ratingfour} value="2" onclick={ratingvalue} checked={checkRating} />
-                        <label  class="ratingfield" for={ratingfour} title="2 stars">2 stars</label>
-                        <input type="radio" id={ratingfive} disabled name={ratingfive} value="1" onclick={ratingvalue} checked={checkRating} />
-                        <label  class="ratingfield" for={ratingfive} title="1 stars">1 star</label>
+                        <input class="emoji-input-box" type="radio" id="emoji-1" disabled={isFieldDesabled} name="emoji-1" value="1" onclick={emojiRatingValue} checked={checkRating} />
+                        <label class="emoji-ratingfield" for="emoji-1" title="emoji-1"><img class="rating-Emoji-icons" src={emojiRating1}></label>
+                        <input class="emoji-input-box" type="radio" id="emoji-2" disabled={isFieldDesabled} name="emoji-2" value="2" onclick={emojiRatingValue} checked={checkRating} />
+                        <label class="emoji-ratingfield" for="emoji-2" title="emoji-2"><img class="rating-Emoji-icons" src={emojiRating2}></label>
+                        <input class="emoji-input-box" type="radio" id="emoji-3" disabled={isFieldDesabled} name="emoji-3" value="3" onclick={emojiRatingValue} checked={checkRating} />
+                        <label class="emoji-ratingfield" for="emoji-3" title="emoji-3"><img class="rating-Emoji-icons" src={emojiRating3}></label>
+                        <input class="emoji-input-box" type="radio" id="emoji-4" disabled={isFieldDesabled} name="emoji-4" value="4" onclick={emojiRatingValue} checked={checkRating} />
+                        <label class="emoji-ratingfield" for="emoji-4" title="emoji-4"><img class="rating-Emoji-icons" src={emojiRating4}></label>
+                        <input class="emoji-input-box" type="radio" id="emoji-5" disabled={isFieldDesabled} name="emoji-5" value="5" onclick={emojiRatingValue} checked={checkedRating} />
+                        <label class="emoji-ratingfield" for="emoji-5" title="emoji-5"><img class="rating-Emoji-icons" src={emojiRating5}></label>
                     </div>
               </template>
               </template>
